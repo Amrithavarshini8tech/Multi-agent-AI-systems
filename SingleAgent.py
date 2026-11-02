@@ -9,10 +9,9 @@ from autogen_ext.models.openai import OpenAIChatCompletionClient
 async def main():
     print("Single Agent - Ask the agent")
 
-
     model_client = OpenAIChatCompletionClient(
         model="gpt-4o",
-        api_key="xx",
+        api_key="xxx",
     )
 
     try:
