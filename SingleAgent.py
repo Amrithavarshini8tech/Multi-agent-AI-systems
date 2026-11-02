@@ -7,17 +7,12 @@ from autogen_ext.models.openai import OpenAIChatCompletionClient
 
 
 async def main():
-    print("Hello")
+    print("Single Agent - Ask the agent")
 
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise RuntimeError(
-            "Set the OPENAI_API_KEY environment variable before running this script."
-        )
 
     model_client = OpenAIChatCompletionClient(
         model="gpt-4o",
-        api_key=api_key,
+        api_key="xx",
     )
 
     try:
